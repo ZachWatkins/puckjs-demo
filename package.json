@@ -1,0 +1,29 @@
+{
+  "name": "puckjs-demo",
+  "version": "1.0.0",
+  "description": "Demonstration of PuckJS APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "printenv",
+    "cert": "bin/ssl localhost",
+    "start": "http-server --ssl -a localhost -p 8000 -o --cert bin/ssl/localhost.crt --key bin/ssl/localhost.key"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZachWatkins/puckjs-demo.git"
+  },
+  "keywords": [
+    "javascript",
+    "espruino",
+    "iot"
+  ],
+  "author": "Zachary Kendall Watkins <watkinza@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZachWatkins/puckjs-demo/issues"
+  },
+  "homepage": "https://github.com/ZachWatkins/puckjs-demo#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
