@@ -1,3 +1,22 @@
-<html><head><title>PuckJS Demo</title></head><body>
-    This page demonstrates various PuckJS capabilities.
-</body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable = no" name="viewport">
+    <meta charset="utf-8" />
+    <title>Demonstrate PuckJS features</title>
+    <script src="https://www.puck-js.com/puck.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Demonstrate PuckJS features</h1>
+        <button onclick="Puck.write('LED1.set();\n');">LED On!</button>
+        <button onclick="Puck.write('LED1.reset();\n');">LED Off!</button>
+        <button onclick="settext('console', Puck.eval('Puck.accel()'));">Get Acceleration</button>
+        <button onclick="Puck.eval('BTN.read()',function(x) { settext('console', x); });">Button state</button>
+        <button onclick="Puck.eval('Puck.light()', function(v) {settext('console', v);});">Light sensor</button>
+        <div id="console"></div>
+    </div>
+    <p><a href="/sensor/accel.html">Accelerometer Demo</a></p>
+</body>
+</html>
